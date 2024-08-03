@@ -1,35 +1,15 @@
-# ST STM32: development platform for [PlatformIO](https://platformio.org)
+# [platform-stm32](https://github.com/os-q/platform-stm32)
 
-[![Build Status](https://github.com/platformio/platform-ststm32/workflows/Examples/badge.svg)](https://github.com/platformio/platform-ststm32/actions)
+[![Build Status](https://github.com/os-q/platform-ststm32/workflows/examples/badge.svg)](https://github.com/os-q/platform-ststm32/actions/workflows/examples.yml)
 
 The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
-* [Home](https://registry.platformio.org/platforms/platformio/ststm32) (home page in the PlatformIO Registry)
-* [Documentation](https://docs.platformio.org/page/platforms/ststm32.html) (advanced usage, packages, boards, frameworks, etc.)
-
-# Usage
-
-1. [Install PlatformIO](https://platformio.org)
-2. Create PlatformIO project and configure a platform option in [platformio.ini](https://docs.platformio.org/page/projectconf.html) file:
-
-## Stable version
-
-```ini
-[env:stable]
-platform = ststm32
-board = ...
-...
+切换下载工具
+```bash
+debug_tool = cmsis-dap
+upload_protocol = cmsis-dap
 ```
 
-## Development version
-
-```ini
-[env:development]
-platform = https://github.com/platformio/platform-ststm32.git
-board = ...
-...
-```
-
-# Configuration
-
-Please navigate to [documentation](https://docs.platformio.org/page/platforms/ststm32.html).
+| spl | arduino | cmsis | libopencm3 | mbed-rtos | cube-hal | zephyr |
+| ----- | ------- | ----- | ---------- | --------- | -------- | ------ |
+| 2.10201.0 | 4.20701.0 | 2.50900.0 | 1.10000.0 | 6.61700.0  |  √  |  2.30600.0  |
